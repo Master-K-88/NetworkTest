@@ -16,12 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-Fy-sDw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-Fy-sDw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Z1u-Qf-rDY"/>
-                                </constraints>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N18-CC-pWX">
                                 <rect key="frame" x="0.0" y="344" width="414" height="4"/>
@@ -29,7 +26,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX5-Bb-17p">
                                 <rect key="frame" x="160" y="402" width="94" height="30"/>
                                 <color key="backgroundColor" red="0.19994452030000001" green="0.21315297690000001" blue="0.36573870159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Download"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleShadowColor" red="0.58253343209999997" green="0.83423485399999997" blue="0.70122559360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbM-A1-6dS"/>
                                 </connections>
@@ -50,7 +50,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zg-Fy-sDw" secondAttribute="trailing" id="5jZ-a7-HJw"/>
                             <constraint firstItem="iX5-Bb-17p" firstAttribute="top" secondItem="N18-CC-pWX" secondAttribute="bottom" constant="54" id="8Zi-KH-BSj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iX5-Bb-17p" secondAttribute="trailing" constant="160" id="FKF-GR-PLB"/>
-                            <constraint firstItem="1zg-Fy-sDw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HYb-J0-SQM"/>
+                            <constraint firstItem="1zg-Fy-sDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYb-J0-SQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iX5-Bb-17p" secondAttribute="bottom" constant="430" id="IpD-V1-j5P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N18-CC-pWX" secondAttribute="trailing" id="RA1-KH-jnN"/>
                             <constraint firstItem="pD5-zS-RxQ" firstAttribute="centerX" secondItem="1zg-Fy-sDw" secondAttribute="centerX" id="ajG-BK-JhU"/>
                             <constraint firstItem="pD5-zS-RxQ" firstAttribute="centerY" secondItem="1zg-Fy-sDw" secondAttribute="centerY" id="jFg-dh-kgo"/>
